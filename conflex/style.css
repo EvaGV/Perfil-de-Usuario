@@ -217,6 +217,9 @@
     }
     
     img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
         object-fit: none;
         height: 30%;
         width: 30%;
