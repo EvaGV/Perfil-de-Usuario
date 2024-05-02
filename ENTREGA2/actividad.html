@@ -147,7 +147,7 @@
         </select>
 
         <label for="guests">Número de huéspedes:</label>
-        <input type="number" name="guests" min="1" required>
+        <input type="number" name="guests" min="1" max="5" required>
 
         <label for="special_requests">Solicitudes especiales:</label>
         <textarea name="special_requests" maxlength="350"></textarea>
@@ -162,7 +162,13 @@
         <label for="product_comment_email">Correo electrónico:</label>
         <input type="email" name="product_comment_email" required>
         <label for="product_rating">Calificación:</label>
-        <input type="number" name="product_rating" min="1" max="5" required>
+        <div>
+            🌟<input type="radio" name="product_rating" value="1" required>
+            🌟🌟<input type="radio" name="product_rating" value="2" required>
+            🌟🌟🌟<input type="radio" name="product_rating" value="3" required>
+            🌟🌟🌟🌟<input type="radio" name="product_rating" value="4" required>
+            🌟🌟🌟🌟🌟<input type="radio" name="product_rating" value="5" required>
+        </div>
         <label for="product_comment">Comentario:</label>
         <textarea id="product_comment" name="product_comment" required></textarea>
         <div class="button-container">
