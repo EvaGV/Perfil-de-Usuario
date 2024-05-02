@@ -6,6 +6,10 @@
 
 }
 
+body{
+    font-family: sans-serif;
+}
+
 label{
     display:block;
     margin-top: 8px;
@@ -99,3 +103,8 @@ input{
     margin: 15px;
 }
 
+.forms h4{
+    color: #ccc;
+    margin-bottom: 5px;
+    font-size: 16;
+}
