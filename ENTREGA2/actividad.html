@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea 6 Formularios</title>
 
-    <link rel="stylesheet" href="/DIA12formulario/style.css">
+    <link rel="stylesheet" href="/ENTREGA2/style.css">
 </head>
 
 <body>
 
     <form class="forms" action="https://ecampus.rocks/test-forms.php" method="post"><h2>Registro de usuario:</h2>
 
-        <label value="username">Nombre de usuario:</label>
-        <input type="text" name="username" required>
-        <label value="email">Correo electrónico:</label>
-        <input type="email" name="email" required>
-        <label value="password">Contraseña:</label>
-        <input type="password" name="password" required>
-        <label value="confirm_password">Confirmar contraseña:</label>
-        <input type="password" name="confirm_password" required>
-        <label value="country">País:</label>
+       Nombre de usuario:
+        <input type="text" name="username" placeholder="Ingrese su nombre"required>
+        Correo electrónico:
+        <input type="email" name="email" placeholder="Ingrese su correo electrónico"required>
+        Contraseña:
+        <input type="password" name="password" placeholder="Ingrese su contraseña" required>
+        Confirmar contraseña:
+        <input type="password" name="confirm_password" placeholder="Confirme su contraseña" required>
+        País:</label>
         <select type="country" name="country" required>
+            <option value="country"></option>
             <option value="country">España</option>
             <option value="country">Italia</option>
             <option value="country">Francia</option>
@@ -42,13 +43,13 @@
 
     
     <form class="forms"><h2>Formulario de contacto</h2>
-        <label value="name">Nombre:</label>
-        <input type="text" name="name" required>
-        <label value="email">Correo electrónico:</label>
-        <input type="email" name="email" required>
-        <label value="subject">Asunto:</label>
-        <input type="text" name="subject" required>
-        <label value="message">Mensaje:</label>
+        Nombre:
+        <input type="text" name="name" placeholder="Ingrese su nombre" required>
+        Correo electrónico:
+        <input type="email" name="email" placeholder="Ingrese su correo electrónico" required>
+        Asunto:
+        <input type="text" name="subject" placeholder="Asunto"required>
+        Mensaje:
         <textarea name="message" maxlength="200" required></textarea>
         <div class="button-container">
             <button class="button" type="submit">Registrarse</button></div>
@@ -57,58 +58,58 @@
     
    
     <form class="forms" action="https://ecampus.rocks/test-forms.php" method="post"> <h2>Pedido de producto</h2>
-        <label value="name">Nombre completo:</label>
-        <input type="text" name="name" required>
+        Nombre completo:
+        <input type="text" name="name" placeholder="Nombre completo"required>
 
-        <label value="shipping_address">Dirección de envío:</label>
-        <input type="text" name="shipping_address" required>
+        Dirección de envío:
+        <input type="text" name="shipping_address" placeholder="Dirección de envío"required>
 
-        <label value="city">Ciudad:</label>
-        <input type="text" name="city" required>
+        Ciudad:
+        <input type="text" name="city" placeholder="Ingrese su ciudad"required>
 
-        <label value="postal_code">Código postal:</label>
-        <input type="text" name="postal_code" required>
+        Código postal:
+        <input type="text" name="postal_code" placeholder="Ingrese su código postal"required>
 
-        <label value="country">País:</label>
+        País:
         <select id="country" name="country" required>
+            <option value="country"></option>
             <option value="country">España</option>
             <option value="country">Italia</option>
             <option value="country">Francia</option>
             <option value="country">Portugal</option>
         </select>
 
-        <label value="phone_number">Teléfono:</label>
-        <input type="tel" name="phone_number" required>
+        Teléfono:
+        <input type="tel" name="phone_number" placeholder="Ingrese su teléfono"required>
 
 
         <h4>Lista de productos:</h4>
         <form> 
             <div class="product">
-                <label>
-                    <input type="checkbox" name="product_lapices" value="Lápices">
+            <input type="checkbox" name="product_lapices" value="Lápices">
                     Lápices
-                </label>
+               
                 <input type="number" name="quantity_lapices" min="0" value="0">
             </div>
         
             <div class="product">
-                <label>
+                
                     <input type="checkbox" name="product_bolis" value="Bolis">
                     Bolis
-                </label>
+                
                 <input type="number" name="quantity_bolis" min="0" value="0">
             </div>
         
             <div class="product">
-                <label>
+                
                     <input type="checkbox" name="product_rotuladores" value="Rotuladores">
                     Rotuladores
-                </label>
+                
                 <input type="number" name="quantity_rotuladores" min="0" value="0">
             </div>
         
 
-        <label value="payment_method">Método de pago:</label>
+        Método de pago:
         <select name="payment_method" required>
             <option value="payment_method">Tarjeta de crédito</option>
             <option value="payment_method">Paypal</option>
@@ -123,16 +124,16 @@
 
     
     <form class="forms" action="https://ecampus.rocks/test-forms.php" method="post"><h2>Reserva de hotel</h2>
-        <label value="hotel">Nombre completo:</label>
+        Nombre completo:
         <input type="text" name="hotel" required>
 
-        <label value="hotel_email">Correo electrónico:</label>
+        Correo electrónico:
         <input type="email" name="hotel_email" required>
 
-        <label value="hotel_phone_number">Número de teléfono:</label>
+        Número de teléfono:
         <input type="tel" name="hotel_phone_number" required>
 
-        <label value="arrival_date">Fecha de llegada:</label>
+        Fecha de llegada:
         <input type="date" name="arrival_date" required>
 
         <label value="departure_date">Fecha de salida:</label>
@@ -157,13 +158,13 @@
 
     
     <form class="forms" action="https://ecampus.rocks/test-forms.php" method="post"><h2>Comentario de producto</h2>
-        <label value="product_comment_name">Nombre:</label>
+        Nombre:
         <input type="text" name="product_comment_name" required>
-        <label value="product_comment_email">Correo electrónico:</label>
+        Correo electrónico:
         <input type="email" name="product_comment_email" required>
-        <label value="product_rating">Calificación:</label>
+        Calificación:
         <input type="number" name="product_rating" min="1" max="5" required>
-        <label value="product_comment">Comentario:</label>
+        Comentario:
         <textarea id="product_comment" name="product_comment" required></textarea>
         <div class="button-container">
             <button class="button" type="submit">Registrarse</button></div>
